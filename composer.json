@@ -1,0 +1,39 @@
+{
+    "name": "springbokagency/modx-live-demo-generate-fake-data",
+    "type": "project",
+    "description": "MODX Live Session (2020-05-07) demo project to generate fake data",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Joshua Lückers",
+            "email": "joshua.luckers@springbokagency.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "modxcms/xpdo2",
+                "version": "v2.8.0-pl",
+                "source": {
+                    "url": "git@github.com:modxcms/xpdo.git",
+                    "type": "git",
+                    "reference": "origin/2.x"
+                }
+            }
+        }
+    ],
+    "require": {
+        "fzaninotto/faker": "^1.9",
+        "springbokagency/faker-xpdo-orm-adapter": "^1.1"
+    },
+    "require-dev": {
+        "modxcms/xpdo2": "^2.8"
+    },
+    "autoload-dev": {
+        "classmap": [
+            "vendor/modxcms/xpdo2/xpdo/",
+            "test_package/model/demo/"
+        ]
+    }
+}
